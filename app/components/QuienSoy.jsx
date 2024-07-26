@@ -3,20 +3,19 @@ import Image from "next/image";
 
 function QuienSoy() {
   return (
-    <div className="container px-5 py-24 mx-auto relative">
+    <div className="w-full h-screen relative mt-10">
       <Image
         src="/assets/barber.jpg"
         alt="Background Image"
+        layout="fill"
         objectFit="cover"
-        width={1200}
-        height={795}
-        className="absolute inset-0 w-full h-full z-0 rounded-lg"
+        className="w-full h-full"
       />
-      <div className="relative flex flex-col text-center w-full mb-20 z-10">
+      <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-10 bg-opacity-75 bg-black p-4">
         <h1 className="text-4xl font-medium title-font mb-8 text-white">
           Sobre Mi
         </h1>
-        <p className="lg:w-2/3 mx-auto leading-loose text-lg text-white p-4 rounded">
+        <p className="lg:w-2/3 mx-auto leading-loose text-lg text-white">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
           eligendi doloribus consectetur earum qui, pariatur repellendus
           distinctio nobis blanditiis. Culpa quasi aspernatur fuga tempora

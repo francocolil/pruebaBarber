@@ -5,11 +5,11 @@ import Galeria1 from "./components/Galeria1";
 export default function Home() {
   return (
     <>
+      <QuienSoy />
       {/* CARDS */}
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 mx-auto">
           {/* COMPONENTE DE LA INFORMACION */}
-          <QuienSoy />
 
           {/* DIPLOMAS */}
           <h1 className="text-2xl font-medium title-font mb-4 text-white text-center py-10 pt-16">
@@ -163,10 +163,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* GALERIA DE IMAGENES */}
-      <Galeria1 />
+        {/* GALERIA DE IMAGENES */}
+        <Galeria1 />
+      </section>
     </>
   );
 }
