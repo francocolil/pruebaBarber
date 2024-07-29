@@ -19,10 +19,18 @@ const VideoPlayer: React.FC = () => {
           url="/assets/video.mp4"
           playing
           loop
-          controls={false}
           width="100%"
           height="50%"
           muted
+          playsinline
+          config={{
+            file: {
+              attributes: {
+                controlsList: "nodownload",
+                disablePictureInPicture: true,
+              },
+            },
+          }}
         />
       ) : (
         <div className="w-600 h-338 bg-gray-300"></div>

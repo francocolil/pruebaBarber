@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-player video::-webkit-media-controls {
+  display: none !important;
+}
