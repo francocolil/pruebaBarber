@@ -1,10 +1,12 @@
 import Image from "next/image";
 import QuienSoy from "./components/QuienSoy";
 import Galeria1 from "./components/Galeria1";
+import VideoPlayer from "./components/VideoPlayer";
 
 export default function Home() {
   return (
     <>
+      <VideoPlayer />
       <QuienSoy />
       {/* CARDS */}
       <section className="text-gray-600 body-font">
