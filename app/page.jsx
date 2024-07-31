@@ -7,14 +7,13 @@ export default function Home() {
   return (
     <>
       <VideoPlayer />
-      <QuienSoy />
       {/* CARDS */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 mx-auto">
           {/* COMPONENTE DE LA INFORMACION */}
 
           {/* DIPLOMAS */}
-          <h1 className="text-2xl font-medium title-font mb-4 text-white text-center py-10 pt-16">
+          <h1 className="text-3xl font-medium title-font mb-4 text-black text-center py-10 pt-16">
             Mis Diplomas
           </h1>
 
@@ -160,6 +159,137 @@ export default function Home() {
                       </svg>
                     </a>
                   </span>
+                </div>
+              </div>
+            </div>
+
+            {/* PRUEBA 1 */}
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div class="block rounded-lg bg-black shadow-secondary-1 dark:bg-surface-dark">
+                <div
+                  class="relative overflow-hidden bg-cover bg-no-repeat"
+                  data-twe-ripple-init
+                  data-twe-ripple-color="light"
+                >
+                  <img
+                    class="rounded-t-lg"
+                    src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+                    alt=""
+                  />
+                  <a href="#!">
+                    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                  </a>
+                </div>
+                <div class="p-6 text-surface dark:text-white">
+                  <h5 class="mb-2 text-xl font-medium leading-tight">
+                    Card title
+                  </h5>
+                  <p class="mb-4 text-base">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button
+                    type="button"
+                    class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Button
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* PRUEBA 2 */}
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                  <img class="rounded-t-lg" src="/assets/1.png" alt="" />
+                </a>
+                <div class="p-5">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Noteworthy technology acquisitions 2021
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Read more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* PRUEBA 3 */}
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div class="block rounded-lg bg-black shadow-secondary-1 dark:bg-surface-dark">
+                <a href="#!">
+                  <img
+                    class="rounded-t-lg"
+                    src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="p-6 text-surface dark:text-white">
+                  <h5 class="mb-2 text-xl font-medium leading-tight">
+                    Card title
+                  </h5>
+                  <p class="mb-4 text-base">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button
+                    type="button"
+                    class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    Button
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* PRUEBA 4 */}
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div class="w-80 p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <img
+                  class="w-full h-40 object-cover rounded-t-lg"
+                  alt="Card Image"
+                  src="/assets/cabello1.jpg"
+                />
+                <div class="p-4">
+                  <h2 class="text-xl  font-semibold">Beautiful Card</h2>
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam quis ante sit amet tellus ornare tincidunt.
+                  </p>
+                  <div class="flex justify-between items-center mt-4">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

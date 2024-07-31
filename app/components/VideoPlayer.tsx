@@ -1,5 +1,14 @@
 // Para reproducir un video debemos instalar el paquete de REACT
 // npm install react-player
+
+// Colocar este codigo en el globals.css para que se pueda reproducir los videos en celular
+
+// CODIGO: @layer base {
+//   .react-player video::-webkit-media-controls {
+//     display: none !important;
+//   }
+// }
+
 "use client";
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";

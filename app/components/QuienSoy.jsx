@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function QuienSoy() {
   return (
-    <div className="w-full h-screen relative mt-10">
+    <div className="w-full h-screen relative">
       <Image
         src="/assets/barber.jpg"
         alt="Background Image"

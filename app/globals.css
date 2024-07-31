@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.react-player video::-webkit-media-controls {
-  display: none !important;
+/* FUNCIONAMIENTO PARA PODER REPRODUCIR UN VIDEO */
+@layer base {
+  .react-player video::-webkit-media-controls {
+    display: none !important;
+  }
 }
