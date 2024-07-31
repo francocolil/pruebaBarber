@@ -121,7 +121,7 @@ function Footer() {
         </div>
 
         {/* TEXTO DENTRO DEL FOOTER */}
-        <div class="ml-16 py-4 text-center md:text-left">
+        <div class="mx-6 py-4 text-center md:text-left">
           <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* <!-- TW Elements section --> */}
             <div class="">
@@ -143,9 +143,8 @@ function Footer() {
                 elit.
               </p>
             </div>
-
             {/* <!-- Products section --> */}
-            <div className="px-[150px]">
+            <div>
               <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                 Products
               </h6>
@@ -163,7 +162,7 @@ function Footer() {
               </p>
             </div>
             {/* <!-- Useful links section --> */}
-            <div className="px-[100px]">
+            <div>
               <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                 Useful links
               </h6>
