@@ -71,7 +71,7 @@ export default function Home() {
             Mis Diplomas
           </h1>
 
-          {/* FUNCION PARA PODER HACERLE CLICK A LOS DIPLOMAS */}
+          {/* FUNCION PARA HACERLE CLICK Y QUE SE AGRANDE LA IMAGEN */}
           <div className="flex flex-wrap -m-4">
             {diplomas.map((diploma, index) => (
               <div key={index} className="p-4 lg:w-1/4 md:w-1/2">
@@ -101,15 +101,28 @@ export default function Home() {
         <Galeria1 />
       </section>
 
-      {/* FUNCION PARA CERRAR LA IMAGEN AL MOMENTO DE HACERLE CLICK */}
+      {/* FUNCION PARA CERRAR LA IMAGEN */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative bg-white p-4 rounded-lg">
+          <div className="relative">
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 bg-white rounded-full p-1"
             >
-              ✖️
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
             </button>
             <Image
               src={selectedImage.src}
@@ -118,13 +131,6 @@ export default function Home() {
               height={selectedImage.height}
               className="rounded-lg"
             />
-            <div className="mt-4 text-center">
-              <h2 className="title-font font-medium text-lg text-gray-900">
-                {selectedImage.title}
-              </h2>
-              <h3 className="text-gray-500 mb-3">{selectedImage.role}</h3>
-              <p className="mb-4">{selectedImage.description}</p>
-            </div>
           </div>
         </div>
       )}

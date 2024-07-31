@@ -37,6 +37,7 @@ function Galeria1() {
         </p>
       </div>
 
+      {/* FUNCION PARA HACERLE CLICK A LA IMAGEN Y QUE SE AGRANDE */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 container px-5 mx-auto">
         {images.map((image, index) => (
           <div key={index} onClick={() => openModal(image)}>
@@ -51,6 +52,7 @@ function Galeria1() {
         ))}
       </div>
 
+      {/* FUNCION PARA CERRA LA IMAGEN */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
           <div className="relative">
@@ -58,7 +60,20 @@ function Galeria1() {
               onClick={closeModal}
               className="absolute top-2 right-2 bg-white rounded-full p-1"
             >
-              ✖️
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
             </button>
             <Image
               src={selectedImage.src}
