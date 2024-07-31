@@ -60,12 +60,13 @@ const products = [
     icon: ArrowPathIcon,
   },
 ];
+
 const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
-export default function Navbarantiguo() {
+export default function NavbarAntiguo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
