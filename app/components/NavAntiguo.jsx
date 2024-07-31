@@ -65,7 +65,7 @@ const callsToAction = [
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
-export default function navbarantiguo() {
+export default function Navbarantiguo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
