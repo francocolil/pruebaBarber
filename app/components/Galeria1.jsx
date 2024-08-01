@@ -38,7 +38,7 @@ function Galeria1() {
       </div>
 
       {/* FUNCION PARA HACERLE CLICK A LA IMAGEN Y QUE SE AGRANDE */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 container px-5 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 container px-5 mx-auto">
         {images.map((image, index) => (
           <div key={index} onClick={() => openModal(image)}>
             <Image

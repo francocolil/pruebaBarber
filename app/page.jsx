@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Galeria1 from "./components/Galeria1";
+import Servicios from "./components/Servicios";
 import VideoPlayer from "./components/VideoPlayer";
 
 export default function Home() {
@@ -63,11 +64,11 @@ export default function Home() {
       <VideoPlayer />
       {/* CARDS */}
       <section className="text-gray-600 body-font">
-        <div className="container px-5 mx-auto">
+        <div className="container px-5 mx-auto pb-7">
           {/* COMPONENTE DE LA INFORMACION */}
 
           {/* DIPLOMAS */}
-          <h1 className="text-3xl font-medium title-font mb-4 text-black text-center py-10 pt-16">
+          <h1 className="text-3xl font-medium title-font text-black text-center py-10">
             Mis Diplomas
           </h1>
 
@@ -97,6 +98,8 @@ export default function Home() {
           </div>
         </div>
 
+        {/* SERVICIOS */}
+        <Servicios />
         {/* GALERIA DE IMAGENES */}
         <Galeria1 />
       </section>
