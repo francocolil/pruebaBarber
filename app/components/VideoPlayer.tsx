@@ -21,7 +21,7 @@ const VideoPlayer: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center my-5">
+    <div className="flex justify-center items-center">
       {isClient ? (
         <ReactPlayer
           className="border-2 border-black rounded-lg"

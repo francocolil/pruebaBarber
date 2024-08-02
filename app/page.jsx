@@ -1,142 +1,79 @@
-"use client";
-
-import React, { useState } from "react";
 import Image from "next/image";
 import Galeria1 from "./components/Galeria1";
 import Servicios from "./components/Servicios";
 import VideoPlayer from "./components/VideoPlayer";
 
 export default function Home() {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = (image) => {
-    setSelectedImage(image);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-    setIsModalOpen(false);
-  };
-
-  const diplomas = [
-    {
-      src: "/assets/1.png",
-      width: 899,
-      height: 337,
-      title: "Diploma 1",
-      role: "UI Developer",
-      description:
-        "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
-    },
-    {
-      src: "/assets/1.png",
-      width: 899,
-      height: 337,
-      title: "Holden Caulfield",
-      role: "UI Developer",
-      description:
-        "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
-    },
-    {
-      src: "/assets/1.png",
-      width: 899,
-      height: 337,
-      title: "Atticus Finch",
-      role: "UI Developer",
-      description:
-        "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
-    },
-    {
-      src: "/assets/1.png",
-      width: 899,
-      height: 337,
-      title: "Henry Letham",
-      role: "UI Developer",
-      description:
-        "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
-    },
-  ];
-
   return (
     <>
       <VideoPlayer />
-      {/* CARDS */}
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 mx-auto pb-7">
-          {/* COMPONENTE DE LA INFORMACION */}
 
-          {/* DIPLOMAS */}
-          <h1 className="text-3xl font-medium title-font text-black text-center py-10">
-            Mis Diplomas
-          </h1>
-
-          {/* FUNCION PARA HACERLE CLICK Y QUE SE AGRANDE LA IMAGEN */}
-          <div className="flex flex-wrap -m-4">
-            {diplomas.map((diploma, index) => (
-              <div key={index} className="p-4 lg:w-1/4 md:w-1/2">
-                <div className="h-full flex flex-col items-center text-center">
-                  <Image
-                    src={diploma.src}
-                    alt={diploma.title}
-                    width={diploma.width}
-                    height={diploma.height}
-                    className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 cursor-pointer"
-                    onClick={() => openModal(diploma)}
-                  />
-                  <div className="w-full">
-                    <h2 className="title-font font-medium text-lg text-gray-900">
-                      {diploma.title}
-                    </h2>
-                    <h3 className="text-gray-500 mb-3">{diploma.role}</h3>
-                    <p className="mb-4">{diploma.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* SERVICIOS */}
-        <Servicios />
-        {/* GALERIA DE IMAGENES */}
-        <Galeria1 />
-      </section>
-
-      {/* FUNCION PARA CERRAR LA IMAGEN */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative">
-            <button
-              onClick={closeModal}
-              className="absolute top-2 right-2 bg-white rounded-full p-1"
-            >
+      <div class="w-[90%] max-w-7xl mx-auto flex flex-col lg:flex-row items-centerlg:space-y-0 lg:space-x-32 mb-10">
+        <div class="flex-1 max-w-2xl mr-auto mt-10">
+          <p class="font-black text-xl sm:text-4xl">
+            La opción más completa para el cuidado masculino
+          </p>
+          <p class="my-3 sm:my-9 text-black/60 text-xs sm:text-base">
+            Salón/barbería donde ejecutamos servicios de barbería, y
+            tratamientos que van desde el cuidado de la piel hasta la química
+            capilar, brindando así una completa cobertura a las demandas del
+            hombre de hoy.
+          </p>
+          <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-9 mb-3 sm:mb-9">
+            <div class="flex-1 bg-black/5 p-4 sm:p-6 flex items-center space-x-4 sm:space-x-6 rounded-xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-10"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m7.848 8.25 1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863 2.077-1.199m0-3.328a4.323 4.323 0 0 1 2.068-1.379l5.325-1.628a4.5 4.5 0 0 1 2.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.33 4.33 0 0 0 10.607 12m3.736 0 7.794 4.5-.802.215a4.5 4.5 0 0 1-2.48-.043l-5.326-1.629a4.324 4.324 0 0 1-2.068-1.379M14.343 12l-2.882 1.664"
+                />
+              </svg>
+              <p class="uppercase text-xs text-secondary">Desde 2023</p>
+            </div>
+            <div class="flex-1 bg-black/5 p-4 sm:p-6 flex items-center space-x-4 sm:space-x-6 rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
+                className="w-10"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
+                  d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
                 />
               </svg>
-            </button>
-            <Image
-              src={selectedImage.src}
-              alt={selectedImage.title}
-              width={selectedImage.width}
-              height={selectedImage.height}
-              className="rounded-lg"
-            />
+              <p class="uppercase text-xs text-secondary">
+                +200 clientes felices
+              </p>
+            </div>
+          </div>
+          <p class="text-black/60 text-xs sm:text-base">
+            Nuestro concepto es brindar la mejor y más alta asesoría con un alto
+            interés de individualización para cada servicio. Nuestra meta es
+            llevar nuestro servicio más allá que el de una barbería común.
+          </p>
+        </div>
+        <div>
+          <div class="w-64 h-64 sm:w-96 sm:h-96 rounded-full overflow-hidden mt-24 mx-auto">
+            <img src="/assets/cabello1.jpg" class="w-full" />
           </div>
         </div>
-      )}
+      </div>
+
+      {/* SERVICIOS */}
+      <Servicios />
+      {/* GALERIA DE IMAGENES */}
+      <Galeria1 />
     </>
   );
 }

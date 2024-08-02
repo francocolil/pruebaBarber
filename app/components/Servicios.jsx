@@ -5,8 +5,8 @@ function Servicios() {
   return (
     <>
       {/* Sección de Servicios */}
-      <section className="text-gray-200 bg-gray-900 body-font">
-        <div className="container px-5 py-24 mx-auto">
+      <section id="servicios" className="text-gray-200 bg-black">
+        <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white pb-[20px]">
               Mis Servicios
@@ -20,7 +20,7 @@ function Servicios() {
           {/* CARD DE LOS SERVICIOS */}
           <div className="flex flex-wrap -m-4">
             {/* SERVICIO 1 */}
-            <div className="p-4 md:w-1/3">
+            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/cortecabello.jpg"
@@ -45,7 +45,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 2 */}
-            <div className="p-4 md:w-1/3">
+            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/barba.jpg"
@@ -72,7 +72,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 3 */}
-            <div className="p-4 md:w-1/3">
+            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/skincare.jpg"
@@ -98,7 +98,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 4 */}
-            <div className="p-4 md:w-1/3">
+            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/clasespeluqueria.jpg"
@@ -121,7 +121,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 5 */}
-            <div className="p-4 md:w-1/3">
+            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/maquillaje.jpg"

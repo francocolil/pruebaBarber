@@ -70,13 +70,13 @@ export default function NavbarAntiguo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
-        <div className="flex lg:flex-1">
-          <Link href="#" className="-m-1.5 p-1.5">
+        <div className="flex lg:flex-1 mx-auto">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               alt=""
@@ -97,7 +97,7 @@ export default function NavbarAntiguo() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
               Product
               <ChevronDownIcon
                 aria-hidden="true"
@@ -151,36 +151,41 @@ export default function NavbarAntiguo() {
               </div>
             </PopoverPanel>
           </Popover>
-
           <Link
-            href="#"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            href="#servicios"
+            className="text-sm font-semibold leading-6 text-white hover:underline"
           >
-            Sobre Mi
+            Servicios
           </Link>
           <Link
-            href="#"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            href="/Barberia"
+            className="text-sm font-semibold leading-6 text-white hover:underline"
           >
             Barberia
           </Link>
           <Link
-            href="#"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            href="/Estilista"
+            className="text-sm font-semibold leading-6 text-white hover:underline"
           >
             Estilista
           </Link>
           <Link
-            href="#"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            href="/Maquillaje"
+            className="text-sm font-semibold leading-6 text-white hover:underline"
           >
             Maquillaje
+          </Link>
+          <Link
+            href="/Carrera"
+            className="text-sm font-semibold leading-6 text-white hover:underline"
+          >
+            Carrera Estilista Unisex
           </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="#"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-white hover:underline"
           >
             Reserva un Hora <span aria-hidden="true">&rarr;</span>
           </Link>
@@ -194,7 +199,7 @@ export default function NavbarAntiguo() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
@@ -236,10 +241,10 @@ export default function NavbarAntiguo() {
                   </DisclosurePanel>
                 </Disclosure>
                 <Link
-                  href="#"
+                  href="#servicios"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Sobre Mi
+                  Servicios
                 </Link>
                 <Link
                   href="#"

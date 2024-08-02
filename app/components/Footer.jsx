@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       {/* <!--Footer container--> */}
-      <footer class="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white mt-10">
+      <footer class="flex flex-col items-center text-center text-surface mt-10">
         {/* ICONOS DE REDES SOCIALES */}
         <div class="container px-6 pt-6">
           {/* <!-- Social media icons container --> */}
