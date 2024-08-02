@@ -247,22 +247,28 @@ export default function NavbarAntiguo() {
                   Servicios
                 </Link>
                 <Link
-                  href="#"
+                  href="Barberia"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Barberia
                 </Link>
                 <Link
-                  href="#"
+                  href="Estilista"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Estilista
                 </Link>
                 <Link
-                  href="#"
+                  href="Maquillaje"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Maquillaje
+                </Link>
+                <Link
+                  href="/Carrera"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Carrera Estilista Unisex
                 </Link>
               </div>
               <div className="py-6">
