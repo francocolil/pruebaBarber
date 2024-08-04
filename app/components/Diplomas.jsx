@@ -63,7 +63,7 @@ function Diplomas() {
           {/* COMPONENTE DE LA INFORMACION */}
 
           {/* DIPLOMAS */}
-          <h1 className="text-3xl font-medium title-font text-center py-10">
+          <h1 className="h1 font-medium title-font text-center pb-12">
             Mis Diplomas
           </h1>
 

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       {/* <!--Footer container--> */}
-      <footer class="flex flex-col items-center text-center text-surface mt-10">
+      <footer class="flex flex-col items-center text-center text-surface mt-10 bg-black text-white">
         {/* ICONOS DE REDES SOCIALES */}
         <div class="container px-6 pt-6">
           {/* <!-- Social media icons container --> */}
@@ -149,16 +149,24 @@ function Footer() {
                 Products
               </h6>
               <p class="mb-4">
-                <a href="#!">Angular</a>
+                <a href="#!" className="text-white">
+                  Angular
+                </a>
               </p>
               <p class="mb-4">
-                <a href="#!">React</a>
+                <a href="#!" className="text-white">
+                  React
+                </a>
               </p>
               <p class="mb-4">
-                <a href="#!">Vue</a>
+                <a href="#!" className="text-white">
+                  Vue
+                </a>
               </p>
               <p>
-                <a href="#!">Laravel</a>
+                <a href="#!" className="text-white">
+                  Laravel
+                </a>
               </p>
             </div>
             {/* <!-- Useful links section --> */}
@@ -167,16 +175,24 @@ function Footer() {
                 Useful links
               </h6>
               <p class="mb-4">
-                <a href="#!">Pricing</a>
+                <a href="#!" className="text-white">
+                  Pricing
+                </a>
               </p>
               <p class="mb-4">
-                <a href="#!">Settings</a>
+                <a href="#!" className="text-white">
+                  Settings
+                </a>
               </p>
               <p class="mb-4">
-                <a href="#!">Orders</a>
+                <a href="#!" className="text-white">
+                  Orders
+                </a>
               </p>
               <p>
-                <a href="#!">Help</a>
+                <a href="#!" className="text-white">
+                  Help
+                </a>
               </p>
             </div>
             {/* <!-- Contact section --> */}

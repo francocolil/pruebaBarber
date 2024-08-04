@@ -24,7 +24,6 @@ const VideoPlayer: React.FC = () => {
     <div className="flex justify-center items-center">
       {isClient ? (
         <ReactPlayer
-          className="border-2 border-black rounded-lg"
           url="/assets/video.mp4"
           playing
           loop

@@ -1,4 +1,8 @@
 import "./globals.css";
+import { Cormorant } from "next/font/google";
+
+const cormorant = Cormorant({ subsets: ["latin"], weight: "400" });
+
 import Footer from "./components/Footer";
 import NavAntiguo from "./components/NavAntiguo";
 
@@ -10,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={cormorant.className}>
         <NavAntiguo />
         {children}
         <Footer />

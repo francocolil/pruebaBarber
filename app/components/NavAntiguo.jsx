@@ -70,10 +70,14 @@ export default function NavbarAntiguo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="navbar">
+    <header>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        rel="stylesheet"
+      />
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="navbar w-full max-w-full mx-auto flex items-center justify-between p-6 lg:px-[100px]"
       >
         <div className="flex lg:flex-1 mx-auto">
           <Link href="/" className="-m-1.5 p-1.5">
@@ -97,7 +101,7 @@ export default function NavbarAntiguo() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6">
+            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-black">
               Product
               <ChevronDownIcon
                 aria-hidden="true"
@@ -153,31 +157,31 @@ export default function NavbarAntiguo() {
           </Popover>
           <Link
             href="#servicios"
-            className="text-sm font-semibold leading-6 hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline text-black"
           >
             Servicios
           </Link>
           <Link
             href="/Barberia"
-            className="text-sm font-semibold leading-6 hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline text-black"
           >
             Barberia
           </Link>
           <Link
             href="/Estilista"
-            className="text-sm font-semibold leading-6 hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline text-black"
           >
             Estilista
           </Link>
           <Link
             href="/Maquillaje"
-            className="text-sm font-semibold leading-6 hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline text-black"
           >
             Maquillaje
           </Link>
           <Link
             href="/Carrera"
-            className="text-sm font-semibold leading-6 hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline text-black"
           >
             Carrera Estilista Unisex
           </Link>
@@ -185,7 +189,7 @@ export default function NavbarAntiguo() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="#"
-            className="text-sm font-semibold leading-6 hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline text-black"
           >
             Reserva un Hora <span aria-hidden="true">&rarr;</span>
           </Link>

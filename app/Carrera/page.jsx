@@ -5,20 +5,22 @@ function page() {
   return (
     <>
       <section>
-        <div className="container mx-auto flex px-4 lg:py-20 py-14 items-center seccioncarrera">
+        <div className="container mx-auto flex px-4 py-14 items-center seccioncarrera">
           {/* TEXTO */}
-          <div className="lg:flex-grow lg:pr-24 flex flex-col items-start text-left mb-16 md:mb-0">
-            <h1 className="sm:text-4xl text-3xl mb-4 font-medium carrerah1">
+          <div className="lg:flex-grow lg:pr-24 flex flex-col items-start text-left mb-16 md:mb-0 mt-10">
+            <h1 className="h1 mb-4 font-medium carrerah1">
               Estilista Unisex con Mención Químicos ADMISIÓN 5 DE AGOSTO 2024
             </h1>
-            <p className="mb-8 leading-relaxed text-lg carrerah1">
+            <p className="parrafo mb-8 leading-relaxed carrerah1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               autem, nihil sit nemo nostrum, temporibus eveniet nesciunt est
               dolores id quis rem, suscipit dolore! Id quae tempore sed magni
               quam!
             </p>
-            <h3>5 RAZONES PARA FORMARTE EN ACADEMIA CRISTIAN DELGADO</h3>
-            <ul className="list-disc mt-4 ml-7 list-inside">
+            <h3 className="text-[20px] font-semibold">
+              5 RAZONES PARA FORMARTE EN ACADEMIA CRISTIAN DELGADO
+            </h3>
+            <ul className="list-disc mt-4 ml-7 list-inside text-[18px]">
               <li>TÍTULO ACREDITADO POR ASIPECH A.G.</li>
               <li>
                 EQUIPO DOCENTE CON VASTA EXPERIENCIA EN FORMACIÓN DE ESTILISTAS
@@ -34,7 +36,7 @@ function page() {
                 EUROPA
               </li>
             </ul>
-            <p className="mt-10">
+            <p className="parrafo mt-10">
               Tenemos 2 modalidades para ser el y la Mejor ESTILISTA de Chile{" "}
               <span className="font-bold">
                 (ambas modalidades tienen el mismo contenido).
@@ -44,7 +46,7 @@ function page() {
 
           {/* IMAGEN */}
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 px-4">
-            <h1 className="text-center text-xl mb-6">{/* ... */}</h1>
+            <br />
             <img
               src="/assets/barber.jpg"
               alt=""
@@ -59,10 +61,10 @@ function page() {
         <div className="container mx-auto flex px-8 lg:py-20 py-14 md:flex-row flex-col items-center">
           {/* TEXTO */}
           <div className="lg:flex-grow md:w-1/2 md:pl-16 flex flex-col items-start text-left mb-16 md:mb-0">
-            <h1 className="sm:text-4xl text-3xl mb-4 font-medium">
+            <h1 className="h1 sm:text-4xl text-3xl mb-4 font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing.
             </h1>
-            <p className="mb-8 leading-relaxed text-lg">
+            <p className="parrafo mb-8 leading-relaxed text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               autem, nihil sit nemo nostrum, temporibus eveniet nesciunt est
               dolores id quis rem, suscipit dolore! Id quae tempore sed magni
