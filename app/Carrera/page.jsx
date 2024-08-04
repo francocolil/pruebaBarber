@@ -5,20 +5,20 @@ function page() {
   return (
     <>
       <section>
-        <div className="container mx-auto flex px-8 lg:py-20 py-14 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex px-4 lg:py-20 py-14 items-center seccioncarrera">
           {/* TEXTO */}
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 flex flex-col items-start text-left mb-16 md:mb-0">
-            <h1 className="sm:text-4xl text-3xl mb-4 font-medium">
+          <div className="lg:flex-grow lg:pr-24 flex flex-col items-start text-left mb-16 md:mb-0">
+            <h1 className="sm:text-4xl text-3xl mb-4 font-medium carrerah1">
               Estilista Unisex con Mención Químicos ADMISIÓN 5 DE AGOSTO 2024
             </h1>
-            <p className="mb-8 leading-relaxed text-lg">
+            <p className="mb-8 leading-relaxed text-lg carrerah1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               autem, nihil sit nemo nostrum, temporibus eveniet nesciunt est
               dolores id quis rem, suscipit dolore! Id quae tempore sed magni
               quam!
             </p>
             <h3>5 RAZONES PARA FORMARTE EN ACADEMIA CRISTIAN DELGADO</h3>
-            <ul className="list-disc mt-4 ml-[29px] list-inside">
+            <ul className="list-disc mt-4 ml-7 list-inside">
               <li>TÍTULO ACREDITADO POR ASIPECH A.G.</li>
               <li>
                 EQUIPO DOCENTE CON VASTA EXPERIENCIA EN FORMACIÓN DE ESTILISTAS
@@ -43,18 +43,16 @@ function page() {
           </div>
 
           {/* IMAGEN */}
-          <div className="lg:max-w-lg lg:w-full md:1/2 w-5/6">
-            <h1 className="text-center text-xl mb-6">
-              CARRERA ACREDITADA POR{" "}
-              <span className="font-bold">ASIPECH A.G.</span>
-            </h1>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 px-4">
+            <h1 className="text-center text-xl mb-6">{/* ... */}</h1>
             <img
               src="/assets/barber.jpg"
               alt=""
-              className="object-cover object-center rounded shadow-xl hover:scale-[105%] transition-[transform]"
+              className="object-cover object-center rounded shadow-xl hover:scale-105 transition-transform md:order-last sm:order-first"
             />
           </div>
         </div>
+
         <Diplomas />
 
         {/* SEGUNDO */}

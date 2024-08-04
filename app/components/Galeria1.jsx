@@ -44,7 +44,7 @@ function Galeria1() {
             <Image
               width={image.width}
               height={image.height}
-              className="h-96 max-w-full rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30 cursor-pointer"
+              className="h-96 max-w-full rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30 cursor-pointer object-cover w-[100%]"
               src={image.src}
               alt={image.alt}
             />

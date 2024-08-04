@@ -20,7 +20,7 @@ function Servicios() {
           {/* CARD DE LOS SERVICIOS */}
           <div className="flex flex-wrap -m-4">
             {/* SERVICIO 1 */}
-            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
+            <div className="p-4 md:w-2/2 xl:w-1/3 md:w-[100%] hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/cortecabello.jpg"
@@ -29,7 +29,7 @@ function Servicios() {
                   height={100}
                   className="w-20 h-20 rounded-full object-cover object-center mb-4 mx-auto"
                 />
-                <h2 className="text-white text-lg title-font font-medium">
+                <h2 className="cardh2 text-lg font-bold bg-white text-black rounded-tl-[600px]">
                   Corte de Cabello
                 </h2>
                 <p className="leading-relaxed mb-6">
@@ -45,7 +45,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 2 */}
-            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
+            <div className="p-4 md:w-2/2 xl:w-1/3 md:w-[100%] hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/barba.jpg"
@@ -54,8 +54,8 @@ function Servicios() {
                   height={100}
                   className="w-20 h-20 rounded-full object-cover object-center mb-4 mx-auto"
                 />
-                <h2 className="text-white text-lg title-font font-medium">
-                  Tratamiento Barba
+                <h2 className="cardh2 text-lg font-bold bg-white text-black rounded-tl-[600px]">
+                  Tratamiento de Barba
                 </h2>
                 <p className="leading-relaxed mb-6">
                   Venga a conocer un corte de barba profesional, ya sea que
@@ -72,7 +72,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 3 */}
-            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
+            <div className="p-4 md:w-2/2 xl:w-1/3 md:w-[100%] hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/skincare.jpg"
@@ -81,7 +81,7 @@ function Servicios() {
                   height={100}
                   className="w-20 h-20 rounded-full object-cover object-center mb-4 mx-auto"
                 />
-                <h2 className="text-white text-lg title-font font-medium">
+                <h2 className="cardh2 text-lg font-bold bg-white text-black rounded-tl-[600px]">
                   Skin Care
                 </h2>
                 <p className="leading-relaxed mb-6">
@@ -98,7 +98,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 4 */}
-            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
+            <div className="p-4 md:w-2/2 xl:w-1/3 md:w-[100%] hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/clasespeluqueria.jpg"
@@ -107,7 +107,7 @@ function Servicios() {
                   height={100}
                   className="w-20 h-20 rounded-full object-cover object-center mb-4 mx-auto"
                 />
-                <h2 className="text-white text-lg title-font font-medium">
+                <h2 className="cardh2 text-lg font-bold bg-white text-black rounded-tl-[600px]">
                   Clases de Peluquería
                 </h2>
                 <p className="leading-relaxed mb-6">
@@ -121,7 +121,7 @@ function Servicios() {
             </div>
 
             {/* SERVICIO 5 */}
-            <div className="p-4 md:w-1/3 hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
+            <div className="p-4 md:w-2/2 xl:w-1/3 md:w-[100%] hover:scale-[105%] transition-[transform] rounded-3xl overflow-hidden flex flex-col mb-6">
               <div className="h-full bg-gray-800 bg-opacity-75 p-8 rounded-lg text-center">
                 <Image
                   src="/assets/maquillaje.jpg"
@@ -130,7 +130,7 @@ function Servicios() {
                   height={100}
                   className="w-20 h-20 rounded-full object-cover object-center mb-4 mx-auto"
                 />
-                <h2 className="text-white text-lg title-font font-medium">
+                <h2 className="cardh2 text-lg font-bold bg-white text-black rounded-tl-[600px]">
                   Maquillaje
                 </h2>
                 <p className="leading-relaxed mb-6">

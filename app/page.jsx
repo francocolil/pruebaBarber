@@ -64,7 +64,7 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <div class="w-64 h-64 sm:w-96 sm:h-96 rounded-full overflow-hidden mt-24 mx-auto">
+          <div className="w-64 h-64 sm:w-96 rounded-full overflow-hidden mt-24 mx-auto sm:h-96 shadow-lg shadow-black/50 m-10">
             <img src="/assets/cabello1.jpg" className="w-full" />
           </div>
         </div>

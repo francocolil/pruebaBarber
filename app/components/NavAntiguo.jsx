@@ -70,7 +70,7 @@ export default function NavbarAntiguo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="">
+    <header className="navbar">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -97,7 +97,7 @@ export default function NavbarAntiguo() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
+            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6">
               Product
               <ChevronDownIcon
                 aria-hidden="true"
@@ -153,31 +153,31 @@ export default function NavbarAntiguo() {
           </Popover>
           <Link
             href="#servicios"
-            className="text-sm font-semibold leading-6 text-white hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline"
           >
             Servicios
           </Link>
           <Link
             href="/Barberia"
-            className="text-sm font-semibold leading-6 text-white hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline"
           >
             Barberia
           </Link>
           <Link
             href="/Estilista"
-            className="text-sm font-semibold leading-6 text-white hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline"
           >
             Estilista
           </Link>
           <Link
             href="/Maquillaje"
-            className="text-sm font-semibold leading-6 text-white hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline"
           >
             Maquillaje
           </Link>
           <Link
             href="/Carrera"
-            className="text-sm font-semibold leading-6 text-white hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline"
           >
             Carrera Estilista Unisex
           </Link>
@@ -185,7 +185,7 @@ export default function NavbarAntiguo() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="#"
-            className="text-sm font-semibold leading-6 text-white hover:underline"
+            className="text-sm font-semibold leading-6 hover:underline"
           >
             Reserva un Hora <span aria-hidden="true">&rarr;</span>
           </Link>

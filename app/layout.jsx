@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-r from-indigo-700 ">
+      <body>
         <NavAntiguo />
         {children}
         <Footer />
