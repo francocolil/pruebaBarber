@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import NavbarAntiguo from "../components/NavAntiguo";
 
-function page() {
+function Page() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const M = require("materialize-css");
