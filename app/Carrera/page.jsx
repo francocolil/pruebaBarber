@@ -5,7 +5,7 @@ function page() {
   return (
     <>
       <section>
-        <div className="container mx-auto flex px-4 py-14 items-center seccioncarrera">
+        <div className="container mx-auto flex px-4 pb-14 items-center seccioncarrera">
           {/* TEXTO */}
           <div className="lg:flex-grow lg:pr-24 flex flex-col items-start text-left mb-16 md:mb-0 mt-10">
             <h1 className="h1 mb-4 font-medium carrerah1">

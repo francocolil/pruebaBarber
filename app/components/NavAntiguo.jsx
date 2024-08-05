@@ -100,7 +100,7 @@ export default function NavbarAntiguo() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-black">
               Product
               <ChevronDownIcon
@@ -154,34 +154,34 @@ export default function NavbarAntiguo() {
                 ))}
               </div>
             </PopoverPanel>
-          </Popover>
+          </Popover> */}
           <Link
             href="#servicios"
-            className="text-sm font-semibold leading-6 hover:underline text-black"
+            className="text-[16px] font-semibold leading-6 hover:underline text-black"
           >
             Servicios
           </Link>
           <Link
             href="/Barberia"
-            className="text-sm font-semibold leading-6 hover:underline text-black"
+            className="text-[16px] font-semibold leading-6 hover:underline text-black"
           >
             Barberia
           </Link>
           <Link
             href="/Estilista"
-            className="text-sm font-semibold leading-6 hover:underline text-black"
+            className="text-[16px] font-semibold leading-6 hover:underline text-black"
           >
             Estilista
           </Link>
           <Link
             href="/Maquillaje"
-            className="text-sm font-semibold leading-6 hover:underline text-black"
+            className="text-[16px] font-semibold leading-6 hover:underline text-black"
           >
             Maquillaje
           </Link>
           <Link
             href="/Carrera"
-            className="text-sm font-semibold leading-6 hover:underline text-black"
+            className="text-[16px] font-semibold leading-6 hover:underline text-black"
           >
             Carrera Estilista Unisex
           </Link>
@@ -189,7 +189,7 @@ export default function NavbarAntiguo() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="#"
-            className="text-sm font-semibold leading-6 hover:underline text-black"
+            className="text-[16px] font-semibold leading-6 hover:underline text-black"
           >
             Reserva un Hora <span aria-hidden="true">&rarr;</span>
           </Link>
